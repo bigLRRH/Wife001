@@ -7,8 +7,9 @@ requires-python = ">=3.8, <4.0"
 
 [tool.nonebot]
 adapters = [
-    { name = "OneBot V12", module_name = "nonebot.adapters.onebot.v12" }
+    { name = "OneBot V12", module_name = "nonebot.adapters.onebot.v12" },
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
 ]
-plugins = []
-plugin_dirs = ["Wife001\plugins"]
+plugins = ["nonebot_plugin_apscheduler"]
+plugin_dirs = ["Wife001/plugins"]
 builtin_plugins = ["echo"]
